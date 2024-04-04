@@ -1,0 +1,9 @@
+{
+	"name": "df-data-pipeline",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a4697c74-9ccc-4e2e-b169-6820c14f481e",
+		"tenantId": "0799c53e-ca9a-49e8-8901-064a6412a41d"
+	}
+}
