@@ -1,0 +1,22 @@
+{
+	"name": "blobDelimited",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blbrtfinancedata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "rt-finance-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
