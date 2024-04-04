@@ -30,11 +30,12 @@ def get_time_series_stocks_data(symbol, period, url, api_key, api_host):
         data = response.json().get('data', []).get('time_series', [])
 
         if data:
-            cols = ['date', 'price', 'change']
+            cols = ['symbol', 'date', 'price', 'change']
             df = pd.DataFrame(columns=cols)
 
             for entry in data:
                 df = df._append({
+                    'symbol': symbol,
                     'date': dt.parse(entry),
                     'price': data[entry]['price'],
                     'change': data[entry]['change']
